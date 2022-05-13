@@ -9,7 +9,7 @@ module.exports = {
     async detail(req, res) {
         const id = req.params
 
-        const user = await Usuario.findOne(icd);
+        const user = await Usuario.findOne(id);
         res.json(user)
     },
 
